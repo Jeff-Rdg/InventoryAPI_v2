@@ -17,3 +17,11 @@ h
 8ProductAPI/obj/Debug/net7.0/ProductAPI.GlobalUsings.g.cs,3\e\3ea250f44f0da503ca67075f2e8b1e76f4c995d2
 €
 PProductAPI/obj/Debug/net7.0/ProductAPI.GeneratedMSBuildEditorConfig.editorconfig,0\1\01576aed6e6b6cf1b93d57f3495b79bba334bd0c
+N
+ProductAPI/Entities/Product.cs,a\9\a95c7b9cbe243c58e04f97aad8e4f8ae88345ab7
+O
+ProductAPI/Entities/Category.cs,4\0\401c94cf30862385cfada7f112e3c9f13440227a
+K
+ProductAPI/Entities/Base.cs,0\0\00d1b5df6352ee0a0ba56a760dc2cecec072feeb
+Q
+!ProductAPI/Entities/BaseEntity.cs,c\9\c96a90b8ecedc057e162e8516b366a5c3c1fc689
