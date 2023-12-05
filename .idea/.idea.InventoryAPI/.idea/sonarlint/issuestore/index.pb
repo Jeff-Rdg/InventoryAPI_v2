@@ -25,3 +25,17 @@ Q
 !ProductAPI/Entities/BaseEntity.cs,c\9\c96a90b8ecedc057e162e8516b366a5c3c1fc689
 Q
 !ProductAPI/Data/ProductContext.cs,9\1\91caf5a049df1abee34a0dca85c73b5796760664
+E
+ProductAPI/.gitignore,c\0\c0c04abcdd7ebfbe9205f83bfa0ab44af83f7360
+_
+/ProductAPI/Migrations/20231205002745_Initial.cs,6\a\6a5fd75261b61d5a3752075739226c00a1b2429d
+_
+/ProductAPI/Migrations/20231205002906_Initial.cs,3\b\3b3a6ceaa1730bb02dcbfd71bde38915fbb01824
+_
+/ProductAPI/Migrations/20231205002957_Initial.cs,7\0\704e32fe2a3e44791110b481ae5c663d00b1c847
+_
+/ProductAPI/Migrations/20231205003114_Initial.cs,9\8\9821f6533cce6b0de09090f94993673ec698e408
+_
+/ProductAPI/Migrations/20231205003244_Initial.cs,7\a\7a88fe923aafbf43b5a196a07cee90f9c846b371
+_
+/ProductAPI/Migrations/20231205003613_Initial.cs,5\d\5d36a40b2446fa4541de68c74964c3d21b43d780
