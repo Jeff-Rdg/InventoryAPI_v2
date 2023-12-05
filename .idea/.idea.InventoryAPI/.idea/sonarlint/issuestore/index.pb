@@ -39,3 +39,19 @@ _
 /ProductAPI/Migrations/20231205003244_Initial.cs,7\a\7a88fe923aafbf43b5a196a07cee90f9c846b371
 _
 /ProductAPI/Migrations/20231205003613_Initial.cs,5\d\5d36a40b2446fa4541de68c74964c3d21b43d780
+d
+4ProductAPI/Migrations/ProductContextModelSnapshot.cs,1\6\168301d6819bbe41a0e1c0ef9681ca4274719766
+h
+8ProductAPI/Migrations/20231205003613_Initial.Designer.cs,a\f\af530b6e1dba8fa258f9ca36b1b8f76809fc81fd
+T
+$ProductAPI/Responses/IResponseApi.cs,7\5\7561e19e72ae20afd97e44d8800d8f2b9d8d4bfa
+W
+'ProductAPI/Responses/ResponseSuccess.cs,5\d\5ddbc26d61b37a135977317bddeeddd7b98bcd19
+U
+%ProductAPI/Responses/ResponseError.cs,f\5\f500b2612b70f873dfea8c489ef9f332024bc1c7
+O
+ProductAPI/Services/IService.cs,d\4\d45990e8343e666a3083506848810e4a9fd6a0fc
+V
+&ProductAPI/Services/CategoryService.cs,4\9\495dc48fde313a7ebcf9602cee8d8021d879813c
+\
+,ProductAPI/Controllers/CategoryController.cs,e\b\ebfcad14fdc89be232420411ba2078ee7ffc4f47

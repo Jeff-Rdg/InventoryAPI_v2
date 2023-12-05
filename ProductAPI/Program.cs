@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProductAPI.Data;
+using ProductAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ProductContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 builder.Services.AddScoped<ProductContext>();
+builder.Services.AddScoped<CategoryService>();
+
 
 var app = builder.Build();
 
