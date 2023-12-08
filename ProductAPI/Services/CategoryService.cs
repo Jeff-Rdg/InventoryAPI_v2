@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using ProductAPI.Data;
 using ProductAPI.Entities;
 using ProductAPI.Responses;
@@ -23,9 +24,13 @@ namespace ProductAPI.Services
             return new ResponseError($"Category with id: {id} not found");
         }
 
-        public Task<IResponseApi> GetAll()
+        public async Task<IResponseApi> GetAll()
         {
-            throw new NotImplementedException();
+            var categories = await _context.Categories.ToListAsync();
+            if (!categories.IsNullOrEmpty())
+                return new ResponseSuccess<List<Category>>(null, categories);
+
+            return new ResponseError($"Categories not found");
         }
 
         public Task<IResponseApi> Create()

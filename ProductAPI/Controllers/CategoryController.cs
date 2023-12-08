@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using ProductAPI.Entities;
 using ProductAPI.Responses;
 using ProductAPI.Services;
 
@@ -30,9 +29,29 @@ namespace ProductAPI.Controllers
                 }
                 return Ok(result);
             }
-            catch
+            catch (Exception e)
             {
-                return BadRequest();
+                return StatusCode(500, new { message = "internal server error", error = e.Message });
+            }
+
+        }
+        [HttpGet]
+        [Route("")]
+        public async Task<IActionResult> FindAll()
+        {
+            try
+            {
+                var result = await _service.GetAll();
+                if (result is ResponseError)
+                {
+                    return NotFound(result);
+
+                }
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, new { message = "internal server error", error = e.Message });
             }
 
         }
