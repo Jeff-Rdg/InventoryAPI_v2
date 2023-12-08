@@ -18,19 +18,9 @@ namespace ProductAPI.Services
         {
             var category = await _context.Categories.FirstOrDefaultAsync(cat => cat.Id == id);
             if (category != null)
-                return new ResponseSuccess<Category>()
-                {
-                    Message = "Category found",
-                    Response = category
-                };
-            
-            string[] errors = { "There are no records with the id provided." };
-            return new ResponseError()
-            {
-                Errors = errors,
-                Message = "unexpected error"
-            };
+                return new ResponseSuccess<Category>(null, category);
 
+            return new ResponseError($"Category with id: {id} not found");
         }
 
         public Task<IResponseApi> GetAll()

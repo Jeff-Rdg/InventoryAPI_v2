@@ -3,7 +3,10 @@
     public class ResponseError : IResponseApi
     {
         public string Message { get; set; }
-        
-        public string[] Errors { get; set; }
+
+        public ResponseError(string message)
+        {
+            Message = message;
+        }
     }
 }
